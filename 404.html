@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sightbridge_web/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/sightbridge_web/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/sightbridge_web/favicon-16.png" />
+    <!--
+      iOS ignores the web app manifest icons when a site is added to the home
+      screen. It uses apple-touch-icon instead, and it wants a PNG: an SVG here
+      (or no link at all) is what produced the blank white square.
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/sightbridge_web/apple-touch-icon.png" />
+    <!-- Written as a root-absolute path so Vite prefixes it with the build's
+         base. Hardcoding the preview subpath here left production asking for
+         /sightbridge_web/manifest.json, which does not exist there. -->
+    <link rel="manifest" href="/sightbridge_web/manifest.json" />
+    <meta name="theme-color" content="#0d9488" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>SightBridge — Sample Vision Organization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/sightbridge_web/assets/index-BRjhBjxb.js"></script>
+    <link rel="modulepreload" crossorigin href="/sightbridge_web/assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="/sightbridge_web/assets/createLucideIcon-CGCTZS7X.js">
+    <link rel="modulepreload" crossorigin href="/sightbridge_web/assets/AuthContext-CaRy56-i.js">
+    <link rel="modulepreload" crossorigin href="/sightbridge_web/assets/scopeIds-B2jfjvST.js">
+    <link rel="stylesheet" crossorigin href="/sightbridge_web/assets/index-4guE54tb.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
