@@ -1,0 +1,3 @@
+import{t as e}from"./createLucideIcon-CGCTZS7X.js";var t=e(`arrow-down-a-z`,[[`path`,{d:`m3 16 4 4 4-4`,key:`1co6wj`}],[`path`,{d:`M7 20V4`,key:`1yoxec`}],[`path`,{d:`M20 8h-5`,key:`1vsyxs`}],[`path`,{d:`M15 10V6.5a2.5 2.5 0 0 1 5 0V10`,key:`ag13bf`}],[`path`,{d:`M15 14h5l-5 6h5`,key:`ur5jdg`}]]);function n(e){return/^[=+\-@\t\r]/.test(e)?`'${e}`:e}function r(e,t,r){let i=e=>{let t=n(e??``);return t.includes(`,`)||t.includes(`"`)||t.includes(`
+`)?`"${t.replace(/"/g,`""`)}"`:t},a=[t.map(i).join(`,`),...r.map(e=>e.map(i).join(`,`))],o=new Blob([a.join(`
+`)],{type:`text/csv;charset=utf-8`}),s=URL.createObjectURL(o),c=document.createElement(`a`);c.href=s,c.download=e,c.click(),URL.revokeObjectURL(s)}export{t as n,r as t};
