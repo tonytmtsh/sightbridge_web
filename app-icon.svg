@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="SightBridge">
+  <!--
+    Home-screen / app icon.
+
+    Drawn as a solid square with no transparency and no rounded corners on
+    purpose: iOS applies its own mask, and a transparent PNG shows up as a black
+    or white box.
+
+    The mark is a suspension bridge over an eye — the "sight" in SightBridge.
+    The deck and towers are straight strokes with a shallow cable curve between
+    the towers, so it reads as a bridge rather than a dome.
+
+    Brand teal matches --color-primary in src/index.css.
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14b8a6" />
+      <stop offset="1" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)" />
+
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bridge deck -->
+    <path d="M84 288 H428" stroke-width="26" />
+
+    <!-- Two towers rising above the deck -->
+    <path d="M150 288 V196" stroke-width="26" />
+    <path d="M362 288 V196" stroke-width="26" />
+
+    <!-- Main cable: a shallow sag between the towers, then down to the deck -->
+    <path d="M84 214 C 150 168, 362 168, 428 214" stroke-width="22" />
+
+    <!-- Hangers from the cable to the deck -->
+    <path d="M214 196 V288" stroke-width="16" />
+    <path d="M298 196 V288" stroke-width="16" />
+
+    <!-- Eye beneath the span: the "sight" in SightBridge -->
+    <path d="M150 388 C 202 344, 310 344, 362 388 C 310 432, 202 432, 150 388 Z" stroke-width="22" />
+  </g>
+  <circle cx="256" cy="388" r="24" fill="#ffffff" />
+</svg>
